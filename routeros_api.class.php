@@ -235,10 +235,10 @@ class RouterosAPI
             foreach ($PARSED as $key => $value) {
                 $PARSED[$key] = $this->arrayChangeKeyName($value);
             }
-            return $PARSED;
             if (empty($PARSED) && !is_null($singlevalue)) {
                 $PARSED = $singlevalue;
             }
+            return $PARSED;
         } else {
             return array();
         }
